@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee40c960-9422-4717-90af-643810467244" name="Default Changelist" comment="">
+    <list default="true" id="04e9574a-d6e9-47a1-a631-5bb21bf0e54a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1sPDbPrd8SzydhCU5ETq9miEnqS" />
+  <component name="ProjectId" id="1sPEBVOQZe9qYi3my1TQmorOJ44" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -27,9 +30,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
@@ -103,11 +104,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ee40c960-9422-4717-90af-643810467244" name="Default Changelist" comment="" />
-      <created>1620765401389</created>
+      <changelist id="04e9574a-d6e9-47a1-a631-5bb21bf0e54a" name="Default Changelist" comment="" />
+      <created>1620765688936</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1620765401389</updated>
+      <updated>1620765688936</updated>
     </task>
     <servers />
   </component>
@@ -117,13 +118,9 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="200" y="110" key="#PSD" timestamp="1620765459884">
+    <state x="184" y="8" key="SettingsEditor" timestamp="1620765775507">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="200" y="110" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1620765459884" />
-    <state x="184" y="8" key="SettingsEditor" timestamp="1620765474860">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1620765474860" />
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1620765775507" />
   </component>
 </project>
