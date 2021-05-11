@@ -1,5 +1,6 @@
 package com.deerbrain.basesdcard
 
+import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
@@ -8,10 +9,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.google.gson.Gson
 import java.io.File
+
 
 private const val TAG = "CardReaderAdapter"
 
@@ -96,9 +99,19 @@ class CardReaderAdapter(val context: Context) : RecyclerView.Adapter<FileCell>()
                 intent.putExtra("innerList", item.imageUrl)
                 context.startActivity(intent)
             }
-            FileTypes.DOCUMENT_EXCEL, FileTypes.DOCUMENT_DOC, FileTypes.DOCUMENT_POWERPOINT, FileTypes.DOCUMENT_PDF -> {
-                //open document file
+            FileTypes.DOCUMENT_EXCEL -> {
+                openFile(item.imageUrl,"application/vnd.ms-excel")
             }
+            FileTypes.DOCUMENT_DOC->{
+                openFile(item.imageUrl,"application/msword")
+            }
+            FileTypes.DOCUMENT_POWERPOINT->{
+                openFile(item.imageUrl,"application/vnd.ms-powerpoint")
+            }
+            FileTypes.DOCUMENT_PDF->{
+                openFile(item.imageUrl,"application/pdf")
+            }
+
             FileTypes.IMAGE -> {
                 val intent = Intent(context, ImageViewer::class.java)
                 intent.putExtra(
@@ -157,6 +170,21 @@ class CardReaderAdapter(val context: Context) : RecyclerView.Adapter<FileCell>()
         this.displayItems.clear()
         this.displayItems = displayFileItems
         notifyDataSetChanged()
+    }
+    fun openFile(path:String?,filetype:String){
+        val path = Uri.fromFile(File(path))
+        val excelIntent = Intent(Intent.ACTION_VIEW)
+        excelIntent.setDataAndType(path, "application/vnd.ms-excel")
+        excelIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+        try {
+            context.startActivity(excelIntent)
+        } catch (e: ActivityNotFoundException) {
+            Toast.makeText(
+                context,
+                "No Application available to viewExcel",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
     }
 
 
