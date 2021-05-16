@@ -29,7 +29,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/deerbrain/basesdcard/SdCardBroadcastReceiver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/deerbrain/basesdcard/SdCardBroadcastReceiver.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -183,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621166191564</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="second commit">
+      <created>1621166702903</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1621166702903</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,42 +231,42 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="263" y="118" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1621109510773" />
-    <state x="481" y="110" key="AndroidProcessChooserDialog" timestamp="1621166622888">
+    <state x="481" y="110" key="AndroidProcessChooserDialog" timestamp="1621166956051">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="481" y="110" key="AndroidProcessChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1621166622888" />
-    <state width="1323" height="206" key="GridCell.Tab.0.bottom" timestamp="1621166647034">
+    <state x="481" y="110" key="AndroidProcessChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1621166956051" />
+    <state width="1323" height="202" key="GridCell.Tab.0.bottom" timestamp="1621166956381">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1621166647034" />
-    <state width="1323" height="206" key="GridCell.Tab.0.center" timestamp="1621166647034">
+    <state width="1323" height="202" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1621166956381" />
+    <state width="1323" height="202" key="GridCell.Tab.0.center" timestamp="1621166956380">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1621166647034" />
-    <state width="1323" height="206" key="GridCell.Tab.0.left" timestamp="1621166647034">
+    <state width="1323" height="202" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1621166956380" />
+    <state width="1323" height="202" key="GridCell.Tab.0.left" timestamp="1621166956380">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1621166647034" />
-    <state width="1323" height="206" key="GridCell.Tab.0.right" timestamp="1621166647034">
+    <state width="1323" height="202" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1621166956380" />
+    <state width="1323" height="202" key="GridCell.Tab.0.right" timestamp="1621166956381">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1621166647034" />
-    <state width="1323" height="206" key="GridCell.Tab.1.bottom" timestamp="1621166647034">
+    <state width="1323" height="202" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1621166956381" />
+    <state width="1323" height="202" key="GridCell.Tab.1.bottom" timestamp="1621166956160">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1621166647034" />
-    <state width="1323" height="206" key="GridCell.Tab.1.center" timestamp="1621166647034">
+    <state width="1323" height="202" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1621166956160" />
+    <state width="1323" height="202" key="GridCell.Tab.1.center" timestamp="1621166956160">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1621166647034" />
-    <state width="1323" height="206" key="GridCell.Tab.1.left" timestamp="1621166647034">
+    <state width="1323" height="202" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1621166956160" />
+    <state width="1323" height="202" key="GridCell.Tab.1.left" timestamp="1621166956160">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1621166647034" />
-    <state width="1323" height="206" key="GridCell.Tab.1.right" timestamp="1621166647034">
+    <state width="1323" height="202" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1621166956160" />
+    <state width="1323" height="202" key="GridCell.Tab.1.right" timestamp="1621166956160">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1621166647034" />
+    <state width="1323" height="202" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1621166956160" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1620766032332">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -297,25 +304,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/deerbrain/basesdcard/SdCardBroadcastReceiver.kt</url>
-          <line>31</line>
+          <line>24</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/deerbrain/basesdcard/SdCardBroadcastReceiver.kt</url>
-          <line>28</line>
+          <line>22</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/deerbrain/basesdcard/SdCardBroadcastReceiver.kt</url>
-          <line>18</line>
+          <line>15</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-function">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/deerbrain/basesdcard/SdCardBroadcastReceiver.kt</url>
-          <line>17</line>
-          <properties class="com.deerbrain.basesdcard.SdCardBroadcastReceiver" method="onReceive">
-            <option name="EMULATED" value="true" />
-          </properties>
+          <line>14</line>
+          <properties class="com.deerbrain.basesdcard.SdCardBroadcastReceiver" method="onReceive" />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>

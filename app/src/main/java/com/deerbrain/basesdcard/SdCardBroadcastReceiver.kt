@@ -10,24 +10,17 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager
 private const val TAG = "SdCardBroadcastReceiver"
 
 class SdCardBroadcastReceiver : BroadcastReceiver() {
-    val MEDIA_REMOVED = "android.intent.action.MEDIA_REMOVED"
-    val MEDIA_BAD_REMOVAL = "android.intent.action.MEDIA_BAD_REMOVAL"
-
-    //      final String MEDIA_EJECT = "android.intent.action.MEDIA_EJECT";
+    val MEDIA_UNMOUNTED = "android.intent.action.MEDIA_UNMOUNTED"
     val MEDIA_EJECT = "android.intent.action.MEDIA_EJECT"
     override fun onReceive(context: Context?, intent: Intent?) {
         val action = intent!!.action
-        Toast.makeText(context, "receiver call", Toast.LENGTH_SHORT).show()
         AppLogger.errorMessage(TAG, action.toString())
-        var intent=Intent("deviceStatus")
-        if (action.equals(MEDIA_REMOVED)|| action.equals(
-                MEDIA_BAD_REMOVAL
-            ) || action.equals(MEDIA_EJECT)
+        var intent = Intent("deviceStatus")
+        if (action.equals(MEDIA_UNMOUNTED) || action.equals(MEDIA_EJECT)
         ) {
-        intent.putExtra("isConnected",false)
+            intent.putExtra("isConnected", false)
         } else {
-            intent.putExtra("isConnected",true)
-            AppLogger.errorMessage(TAG, " connected")
+            intent.putExtra("isConnected", true)
         }
         context!!.sendBroadcast(intent)
     }
