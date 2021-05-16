@@ -60,7 +60,7 @@ class ImageViewer : AppCompatActivity(), View.OnClickListener {
         //shownImage.image = getImageFrom(imageIndex)
         val photoUri: Uri = Uri.fromFile(File(list.get(imageIndex).imageUrl))
 
-        Glide.with(this).load(photoUri).centerCrop().into(imageView);
+        Glide.with(this).load(photoUri).into(imageView);
         if (imageIndex == 0) {
             rewind.isEnabled = false
             rewind.isClickable = false
