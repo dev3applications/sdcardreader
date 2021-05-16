@@ -24,8 +24,11 @@ class MainActivity : AppCompatActivity() {
         override fun onReceive(context: Context?, intent: Intent?) {
             if(intent!!.getBooleanExtra("isConnected",false)){
                 connectBtn.text="SD Card Connected"
+                isSDCardReaderConnected = true
+
             }else{
                 connectBtn.text="SD Card Not Connected"
+                isSDCardReaderConnected = false
             }
         }
     }
