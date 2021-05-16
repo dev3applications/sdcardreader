@@ -1,31 +1,42 @@
 package com.deerbrain.basesdcard
 
+import android.content.BroadcastReceiver
+import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
+import android.hardware.usb.UsbManager
 import android.os.Bundle
 import android.os.Environment
 import android.util.Log
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
 
 private const val TAG = "MainActivity"
+lateinit var connectBtn:Button
 
 class MainActivity : AppCompatActivity() {
-
     var isSDCardReaderConnected: Boolean =
         false //This needs to detect when an SD card is connected and adjust value as needed. This would preferalbly be an enum rather than a boolean
-
+    var receiver:BroadcastReceiver=object :BroadcastReceiver(){
+        override fun onReceive(context: Context?, intent: Intent?) {
+            if(intent!!.getBooleanExtra("isConnected",false)){
+                connectBtn.text="SD Card Connected"
+            }else{
+                connectBtn.text="SD Card Not Connected"
+            }
+        }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val isSDPresent = Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED
-        val isSDSupportedDevice: Boolean = Environment.isExternalStorageRemovable()
-
+        connectBtn=findViewById(R.id.connectedButton)
         if (CardFileManager.hasSdCard(this)) {
             // yes SD-card is present
             Log.e(TAG, "yes sd card is present")
-            connectedButton.text = "SD Card Connected"
+            connectBtn.text = "SD Card Connected"
             isSDCardReaderConnected = true
 
 
@@ -49,6 +60,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CardReader::class.java)
             startActivity(intent)
         }
+            registerReceiver(receiver,IntentFilter("deviceStatus"))
 
 
     }
@@ -56,8 +68,13 @@ class MainActivity : AppCompatActivity() {
 
     fun connectedButtonPressed() {
         if (isSDCardReaderConnected == true) {
-            val intent = Intent(this, CardReader::class.java)
-            startActivity(intent)
+            if(CardFileManager.hasSdCard(this)) {
+                val intent = Intent(this, CardReader::class.java)
+                startActivity(intent)
+            }else{
+                Toast.makeText(this, "No SD Card Reader Connected", Toast.LENGTH_SHORT).show()
+
+            }
             //pass in the the base file directory
         } else {
             Toast.makeText(this, "No SD Card Reader Connected", Toast.LENGTH_SHORT).show()
@@ -73,6 +90,7 @@ class MainActivity : AppCompatActivity() {
             connectedButton.text = "SD Card Connected"
         }
     }
+
 
 
 }

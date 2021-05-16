@@ -71,10 +71,20 @@ class CardFileManager {
           }
 
       }*/
+    fun removeFilesFromPaths(paths: ArrayList<String>): Boolean {
+        //remove multiple files from the SD card reader and return true if successful or return some value of success or error
+        var result: Boolean = true
+        for (i in 0 until paths.size) {
+            result = File(paths.get(i)).delete()
 
-    /* fun removeFilesFromPaths(paths: ArrayList<String>) -> Boolean {
-         //remove multiple files from the SD card reader and return true if successful or return some value of success or error
-     }
+        }
+        return result
+    }
+    fun removeFileFromPath(path: String): Boolean {
+        //remove single file from SD card Reader
+        return File(path).delete()
+    }
+    /*
 
 
      fun removeFileFromPath(path: String) -> Bool {
@@ -197,6 +207,7 @@ class CardFileManager {
             }
             return imageList
         }
+
         fun getAllAudioFile(list: MutableList<FileItem>): MutableList<FileItem> {
             var imageList: MutableList<FileItem> = ArrayList()
             for (i in 0 until list.size) {
@@ -428,7 +439,7 @@ class CardFileManager {
                 } else if (list.get(i).isDirectory) {
                     fileItem = FileItem(
                         list.get(i).name,
-                        list.get(i).lastModified().toString(),
+                        getFileData(list.get(i).lastModified().toLong()),
                         FileTypes.FOLDER,
                         list.get(i).absolutePath, ""
                     )
