@@ -11,7 +11,6 @@ private const val TAG = "SdCardBroadcastReceiver"
 
 class SdCardBroadcastReceiver : BroadcastReceiver() {
     val MEDIA_REMOVED = "android.intent.action.MEDIA_REMOVED"
-    val MEDIA_UNMOUNTED = "android.intent.action.MEDIA_UNMOUNTED"
     val MEDIA_BAD_REMOVAL = "android.intent.action.MEDIA_BAD_REMOVAL"
 
     //      final String MEDIA_EJECT = "android.intent.action.MEDIA_EJECT";
@@ -30,6 +29,6 @@ class SdCardBroadcastReceiver : BroadcastReceiver() {
             intent.putExtra("isConnected",true)
             AppLogger.errorMessage(TAG, " connected")
         }
-            context!!.sendBroadcast(intent)
+        context!!.sendBroadcast(intent)
     }
 }
